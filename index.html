@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product list</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./assets/images/logo.png" alt="" />
+        </div>
+        <div class="search-bar">
+          <div class="close-searchbar">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input
+            type="text"
+            placeholder="Search for Products, Brands and More"
+          />
+        </div>
+        <nav class="navbar">
+          <div class="open-searchbar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <ul>
+            <li>
+              <i class="fa-solid fa-user"></i>
+              <span>Login</span>
+            </li>
+            <li>
+              <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-count">0</div>
+              </div>
+              <span>Cart</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-store"></i>
+              <span>Become a Seller</span>
+            </li>
+            <li class="menu-icon">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-slider-container" draggable="true">
+          <div class="nav-slider">
+            <div class="login-signup">
+              <i class="fa-solid fa-right-to-bracket"></i>
+              <a href="">Login/SignUp</a>
+            </div>
+            <div class="nav-slider-links">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li>
+                  <div class="social-links">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="product-section">
+      <h2 class="heading">
+        Products
+      </h2>
+      <div class="filter-container">
+       <div>
+        <div class="filter-btn">
+          <i class="fa-solid fa-sliders"></i>
+          <span>Filter</span>
+        </div>
+        <div class="filters">
+          <ul>
+            <li>
+              <select name="" id="category">
+                <option value="" disabled selected>Category</option>
+                <!-- <option value="men">Men</option>
+                <option value="women">Women</option>
+                <option value="kids">Kids</option>
+                <option value="boy">Boys</option>
+                <option value="girl">Girls</option> -->
+              </select>
+            </li>
+            <li class="price-range">
+             <div>Price ₹ 0 - <span class="setPriceRange">200</span></div>
+             <input id="price-rang-input" type="range" min="0" max="3000" value="200">
+            </li>
+          </ul>
+          <button class="apply-btn">Apply</button>
+        </div>
+       </div>
+      </div>
+
+      <!-- Product's List -->
+       <div class="product-container">
+        <div class="products">
+          <span>Loding...</span>
+        </div>
+
+       </div>
+    </section>
+
+    <footer>
+     <div class="footer-container">
+      <div class="links">
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="social-links">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+      </div>
+     </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
