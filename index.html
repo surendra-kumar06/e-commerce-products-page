@@ -14,6 +14,10 @@
     />
   </head>
   <body>
+    <div id="productSection"></div>
+    <div id="toast" class="toast">
+      <span class="toast-message">This is a beautiful toast message!</span>
+  </div>
     <header>
       <div class="container">
         <div class="logo">
@@ -29,6 +33,7 @@
           <input
             type="text"
             placeholder="Search for Products, Brands and More"
+            id="searchInput"
           />
         </div>
         <nav class="navbar">
@@ -118,12 +123,17 @@
       <!-- Product's List -->
        <div class="product-container">
         <div class="products">
-          <span>Loding...</span>
         </div>
+        <span class="loader">
+          <img src="./assets/images/loader.webp" alt="">
+        </span>
 
        </div>
     </section>
 
+    <a href="#productSection" class="backTopBtn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
     <footer>
      <div class="footer-container">
       <div class="links">

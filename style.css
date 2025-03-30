@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #f1f1f4;
     font-family: sans-serif;
@@ -173,6 +175,70 @@ footer{
     gap: 20px;
     font-size: 18px;
 }
+.backTopBtn{
+    width: 20px;
+    height: 20px;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    border-radius: 100%;
+    cursor: pointer;
+    bottom: 50px;
+    right: 40px;
+    background-color: blue;
+    z-index: 99;
+    display: none;
+}
+
+.toast {
+    visibility: hidden;  
+    min-width: 300px;
+    background-color: #f5461a;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px 20px;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    font-size: 16px;
+    opacity: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, visibility 0.5s ease;
+}
+
+/* Toast Message Text Styling */
+.toast-message {
+    font-weight: 500;
+}
+
+/* Toast Show Style */
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); /* Smooth slide-up effect */
+}
+
+/* Add an animation to the toast (fade and slide effect) */
+.toast.show {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
 
 
 /* Media Screens */
@@ -238,6 +304,19 @@ option{
 
 
 /* Product Section */
+.loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.loader img{
+    width: 40px;
+    /* opacity: 0; */
+}
+.show{
+    opacity: 1;
+    /* display: block; */
+}
 .product-section{
     max-width: 1400px;
     margin-inline: auto;
