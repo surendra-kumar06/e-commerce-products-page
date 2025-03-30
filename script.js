@@ -116,7 +116,7 @@ getProducts();
 
 window.addEventListener('scroll',()=>{
     let {scrollTop, clientHeight, scrollHeight} = document.documentElement;
-    if(scrollTop + clientHeight+1 >= scrollHeight){
+    if(scrollTop + clientHeight+2 >= scrollHeight){
         page += 1;
         getProducts(); 
     }
